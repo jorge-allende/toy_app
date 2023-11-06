@@ -44,12 +44,13 @@ gem "bootsnap", require: false
 
 # Use Sass to process CSS
 # gem "sassc-rails"
+gem "pg", "1.3.5"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
 group :development, :test do
-  gem "sqlite3", "1.4.2"
+  # gem "sqlite3", "1.4.2"
   gem "debug",   "1.5.0", platforms: %i[ mri mingw x64_mingw ]
 end
 
@@ -71,6 +72,6 @@ group :test do
   gem "webdrivers"
 end
 
-group :production do
-  gem "pg", "1.3.5"
-end
+# group :production do
+#   gem "pg", "1.3.5"
+# end
