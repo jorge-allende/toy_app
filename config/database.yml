@@ -20,6 +20,7 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: toy_app
   username: jorgeallende
   password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
